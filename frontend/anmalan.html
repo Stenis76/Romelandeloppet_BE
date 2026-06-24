@@ -1,0 +1,303 @@
+#Använde ai till grunden och fin justerade utseende osv själv för anmalan.htlm
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Anmälan – Romelandaloppet 2026</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #111;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #1d1d1d;
+            width: 100%;
+            padding: 12px 0;
+        }
+
+        .navbar-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+
+        .gold-text {
+            color: rgba(255, 217, 0, 0.685);
+        }
+
+        /* INTRO + VISA MER */
+        .intro-text {
+            font-size: 18px;
+            margin-bottom: 2px; /* mindre mellanrum */
+        }
+
+        .toggle-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0; /* tar bort extra vitt */
+        }
+
+        .toggle-btn {
+            background: white; /* alltid vit */
+            border: none;
+            color: #0077ff;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .toggle-btn:hover {
+            text-decoration: underline;
+        }
+
+        .toggle-arrow {
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-arrow.open {
+            transform: rotate(180deg);
+        }
+
+        .hidden-text {
+            white-space: pre-line;
+            display: none;
+            margin-top: 5px; /* mindre mellanrum */
+            font-size: 17px;
+        }
+
+        /* FORM DESIGN */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 34px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            margin-top: 35px;
+            font-size: 26px;
+            border-left: 5px solid rgba(255, 217, 0, 0.685);
+            padding-left: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .checkbox-row {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .checkbox-row input {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .info-box {
+            background: #f7f7f7;
+            border-left: 4px solid rgba(255, 217, 0, 0.685);
+            padding: 15px;
+            margin-top: 25px;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 15px;
+            background: rgba(255, 217, 0, 0.685);
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        button:hover {
+            background: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo">
+      ROMELANDA<span class="gold-text">LOPPET</span>
+    </a>
+  </div>
+</nav>
+
+<!-- SIDANS INNEHÅLL -->
+<div class="container">
+
+    <h1>Anmälan till Romelandaloppet 2026</h1>
+
+    <!-- INTRO -->
+    <p class="intro-text">
+        Lördag den 22 augusti är det dags för årets upplaga av Romelandaloppet! 
+        Fyra lopp, aktiviteter för hela familjen och fina priser.
+    </p>
+
+    <!-- VISA MER KNAPP -->
+    <div class="toggle-wrapper">
+        <button class="toggle-btn" onclick="toggleText()">
+            Visa mer <span id="arrow" class="toggle-arrow">▼</span>
+        </button>
+    </div>
+
+    <!-- DOLD TEXT -->
+    <div id="more-text" class="hidden-text">
+Lördag den 22 augusti är det äntligen dags för årets utgåva av Romelandaloppet!
+Spänningen är olidlig – vem är egentligen snabbast i Romelanda i år?
+RUF:s pojkar -14 uppe på Gunnars äng i Romelanda.
+
+Det kommer att erbjudas fyra olika startkategorier, finfina priser, god fika och roliga aktiviteter för hela familjen. 
+Du behöver inte vara löpare för att delta – en rask promenad i goda vänners lag är också helt okej.
+
+Följande startkategorier erbjuds:
+
+Knatteloppet – cirka 250 meter (0–6 år)
+Start 10:00
+Uppvärmning med maskot 15 min innan start.
+Anmälningsavgift 50 kr (inkl. barnlotteri).
+
+Juniorloppet – cirka 2 km (7–12 år)
+Start 10:30 (masstart)
+Anmälningsavgift 50 kr (inkl. barnlotteri).
+
+Lilla loppet – cirka 3,5 km (ungdom/vuxen)
+Start 11:30 (masstart)
+150 kr (inkl. vuxenlotteri).
+
+Stora loppet – cirka 6,5 km (ungdom/vuxen)
+Start 12:30 (nivåstart)
+150 kr (inkl. vuxenlotteri).
+
+All start och målgång sker på Gunnars äng och evenemanget pågår mellan kl. 10–14.
+
+Anmäl er senast torsdagen 20/8. Efteranmälan på plats kostar 50 kr extra för vuxenloppen och 25 kr extra för barn/junior.
+
+Hälsningar  
+RUF P14
+    </div>
+
+    <h2>Deltagarinformation</h2>
+
+    <form action="http://127.0.0.1:8000/api/anmalan" method="POST">
+
+        <label>E‑post *</label>
+        <input type="email" name="email" required>
+
+        <label>Förnamn *</label>
+        <input type="text" name="fornamn" required>
+
+        <label>Efternamn *</label>
+        <input type="text" name="efternamn" required>
+
+        <label>Födelseår *</label>
+        <input type="number" name="fodelsear" min="1900" max="2026" required>
+
+        <label>Vilket lopp ställer du upp i? *</label>
+        <select name="klass" required>
+            <option value="">Välj klass...</option>
+            <option>Knatteloppet 250m (0–6 år) – 50 kr</option>
+            <option>Juniorloppet 2 km (7–12 år) – 50 kr</option>
+            <option>Lilla loppet 3,5 km – 150 kr</option>
+            <option>Stora loppet 6,5 km – 150 kr</option>
+        </select>
+
+        <label>Vilken kategori deltar du i?</label>
+        <select name="kategori">
+            <option>Promenad</option>
+            <option>Motionär</option>
+            <option>Elit</option>
+        </select>
+
+        <label>Mobilnummer *</label>
+        <input type="tel" name="mobil" required>
+
+        <div class="checkbox-row">
+            <input type="checkbox" required>
+            <span>Jag har tagit del av informationen ovan.</span>
+        </div>
+
+        <!-- INFO BEFORE SUBMIT -->
+        <div class="info-box">
+            För att anmälan ska vara giltig ska betalning ske omgående via Swish till  
+            <strong>070‑312 21 01 (Karolin Ryberg)</strong>.
+
+            Uppge namn och födelseår på deltagaren vid betalning.  
+            Anmälan är bindande och återbetalas ej.
+
+            Jag är medveten om att arrangören kan komma att fotografera och filma under dagen 
+            och att materialet kan användas i marknadsföringssyfte.
+        </div>
+
+        <button type="submit">Skicka anmälan</button>
+    </form>
+
+</div>
+
+<script>
+function toggleText() {
+    const text = document.getElementById("more-text");
+    const arrow = document.getElementById("arrow");
+    const btn = document.querySelector(".toggle-btn");
+
+    if (text.style.display === "block") {
+        text.style.display = "none";
+        btn.childNodes[0].textContent = "Visa mer ";
+        arrow.classList.remove("open");
+    } else {
+        text.style.display = "block";
+        btn.childNodes[0].textContent = "Visa mindre ";
+        arrow.classList.add("open");
+    }
+}
+</script>
+
+</body>
+</html>
